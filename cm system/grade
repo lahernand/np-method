@@ -1,0 +1,61 @@
+To calificar:  
+    write "CALIFICAR ESTUDIANTES" to the console.
+    write "3. NodeJS" to the console.
+    write "2. JavaScript" to the console.
+    write "1. MongoDB" to the console.
+    skip one line to the console.
+    write "Selecciona un curso:" to the console.
+    read a string from the console.        
+    put the string into a course.
+    write "Calificar Todos [1], Un estudiante [2]:" to the console.
+    read a string called option from the console.
+    if the option is "1", calificar the course.
+    if the option is "2", calificar estudiante giving the course.
+
+To calificar a course:
+  if the course is "1", put "D:\cal-4700 initiative\CMS\1.txt"  into a path.
+  if the course is "2", put "D:\cal-4700 initiative\CMS\2.txt"  into the path.
+  if the course is "3", put "D:\cal-4700 initiative\CMS\3.txt"  into the path.
+  read the path into a buffer called original. If the i/o error is not blank, write the i/o error on the console.
+  slap a rider on the original.
+  get a string called encabezado from the original given the rider.
+  append the encabezado to a buffer.
+  Loop.    
+    get a string from the original given the rider.
+    if the string is blank, break.    
+    get a token from the string. 
+    write "Califica a: " then the token then " - " to the console without advancing.
+    read another string from the console.
+    append the token then " - " then the other string then the crlf string to the buffer.
+
+    put "C" into an activity's action. put the system's date/time into the activity's date.  [seguimiento]
+    put the token into the activity's control. put the course into the activity's course. 
+    register the activity.
+  Repeat.
+  write the buffer to the path.
+  If the i/o error is not blank, write the i/o error on the console.
+  write "Calificaciones registradas" to the console.
+
+To calificar estudiante giving a course:
+  write "Introduce número de control:" to the console.
+  read a string called control from the console.
+  write "Introduce calificación:" to the console.
+  read a string called calific from the console.
+  if the course is "1", put "D:\cal-4700 initiative\CMS\1.txt"  into a path.
+  if the course is "2", put "D:\cal-4700 initiative\CMS\2.txt"  into the path.
+  if the course is "3", put "D:\cal-4700 initiative\CMS\3.txt"  into the path.
+  read the path into a buffer called original. If the i/o error is not blank, write the i/o error on the console.
+  slap a rider on the original.
+  Loop.    
+    get a string from the original given the rider.
+    if the string is blank, break.    
+    get a token from the string.
+    if the token is the control,  append the control then " - " then the calific then the crlf string to a buffer.
+    if the token is not the control, append the string then the crlf string to the buffer.  
+    put "C" into an activity's action. put the system's date/time into the activity's date.  [seguimiento]
+    put the control into the activity's control. put the course into the activity's course. 
+    register the activity.
+  Repeat.
+  write the buffer to the path.
+  If the i/o error is not blank, write the i/o error on the console.
+  write "Calificación registrada".

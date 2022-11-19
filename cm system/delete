@@ -1,0 +1,70 @@
+To borrar:  
+  Loop.
+    write "BAJA DE ESTUDIANTES" to the console.
+    write "3. NodeJS" to the console.
+    write "2. JavaScript" to the console.
+    write "1. MongoDB" to the console.
+    skip one line to the console.
+    write "Ingresa número de control:" to the console.
+    read a string from the console.
+    put the string into a student's control_number.
+    write "Selecciona un curso:" to the console.
+    read another string from the console.        
+    put the other string into the student's course_number.
+    mark the student.
+    write "¿Deseas dar de baja otro curso? Si[1]  No[0]: " to the console without advancing.
+    read a string called condition from the console.
+    if the condition is "0", break.
+    skip one line to the console.
+  Repeat.
+
+To mark a student:
+  put "D:\cal-4700 initiative\CMS\inscripciones.txt"  into a path.
+  read the path into a buffer called original. If the i/o error is not blank, write the i/o error on the console.
+  slap a rider on the original.
+  Loop.    
+    get a string from the original given the rider.
+    if the string is blank, break.
+    if the string is the student, mark the student on a buffer.
+    if the string is not the student, append the string then the crlf string to the buffer.  
+  Repeat.
+  write the buffer to the path.
+  If the i/o error is not blank, write the i/o error on the console.
+  put "B" into an activity's action. put the system's date/time into the activity's date.  [seguimiento]
+  put the student's control_number into the activity's control. put the student's course_number into the activity's course. 
+  register the activity.
+
+To decide if a string is a student:
+  get a token from the string.
+  if the token is the student's control_number, get a course from the string.
+  if the course is the student's course_number, say yes.
+  say no. 
+
+To mark a student on a buffer:
+  append "B " then the student's control_number then the crlf string to the buffer.  
+  write "Estudiante con número  " then the student's control_number then "  " then "dado de baja en curso  " then the student's course_number to the console. 
+
+To get a string from a buffer given a rider:
+  Clear the string.
+  If the rider's source is blank, exit.
+  Move the rider (text file rules).   
+  If the rider's token is blank, exit.
+  Put the rider's token into the string.
+
+To get a token from a string:
+  slap a rider on the string. 
+  If the rider's source is blank, exit.
+  Move the rider (word wrapping rules).   
+  If the rider's token is blank, exit.
+  Put the rider's token into the token.
+
+To get a course from a string:
+  slap a rider on the string. 
+  If the rider's source is blank, exit.
+  Move the rider (word wrapping rules).   
+  Move the rider (word wrapping rules).   
+  Move the rider (word wrapping rules).   
+  Move the rider (word wrapping rules).   
+  Move the rider (word wrapping rules).   
+  If the rider's token is blank, exit.
+  Put the rider's token into the course.

@@ -1,0 +1,15 @@
+An activity has
+  an action string,
+  a date date/time,
+  a control string,
+  a course string.
+
+To register an activity:
+  put "D:\cal-4700 initiative\CMS\seguimiento.txt"  into a path.
+  if the path is not in the file system, create the path in the file system.
+  read the path into a buffer called original.
+  put the activity's action then " - "  then the activity's control then " - "  then the activity's course into a string called auxiliar.
+  append " - " then the activity's date's string to the auxiliar.  
+  write the original then the auxiliar then the crlf string to the path. 
+  If the i/o error is not blank, write the i/o error on the console.
+

@@ -1,0 +1,29 @@
+A student has 
+  a control_number string, 
+  a course_number string. 
+
+A course is a string.
+
+To run:
+  Start up.  
+  Loop.
+    write "BIENVENIDO AL CMS" to the console.
+    write "Selecciona la opción a realizar" to the console.
+    skip one line on the console.
+    write "3. Calificar" to the console.
+    write "2. Borrar inscripción" to the console.
+    write "1. Inscribir" to the console.
+    write "0. Salir" to the console.
+    skip one line to the console.   
+    write "Opción: " to the console without advancing. 
+    read a string from the console.
+    if the string is "0", break.
+    if the string is "1", inscribir.
+    if the string is "2", borrar.
+    if the string is "3", calificar.
+  Repeat.
+  Shut down.
+
+To skip one line on the console;
+To skip one line to the console:
+  write "" to the console.
