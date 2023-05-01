@@ -18,9 +18,9 @@ To run:
     write "Write option " to the console without advancing. 
     read a string from the console.
     if the string is "0", break.
-    if the string is "1", inscribir.
-    if the string is "2", borrar.
-    if the string is "3", calificar.
+    if the string is "1", enroll.
+    if the string is "2", unenroll.
+    if the string is "3", grade.
   Repeat.
   Shut down.
 
