@@ -5,7 +5,7 @@ An activity has
   a course string.
 
 To register an activity:
-  put "D:\cal-4700 initiative\CMS\seguimiento.txt"  into a path.
+ put "D:\cal-4700 initiative\CMS\cm system\files\log.txt"  into a path.
   if the path is not in the file system, create the path in the file system.
   read the path into a buffer called original.
   put the activity's action then " - "  then the activity's control then " - "  then the activity's course into a string called auxiliar.
