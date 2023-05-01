@@ -7,15 +7,15 @@ A course is a string.
 To run:
   Start up.  
   Loop.
-    write "BIENVENIDO AL CMS" to the console.
-    write "Selecciona la opción a realizar" to the console.
+    write "WELCOME TO THE CMS" to the console.
+    write "Select what do you want to do" to the console.
     skip one line on the console.
-    write "3. Calificar" to the console.
-    write "2. Borrar inscripción" to the console.
-    write "1. Inscribir" to the console.
-    write "0. Salir" to the console.
+    write "3. Grade" to the console.
+    write "2. Unenroll student" to the console.
+    write "1. Enroll student" to the console.
+    write "0. Exit" to the console.
     skip one line to the console.   
-    write "Opción: " to the console without advancing. 
+    write "Write option " to the console without advancing. 
     read a string from the console.
     if the string is "0", break.
     if the string is "1", inscribir.
