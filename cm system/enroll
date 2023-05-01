@@ -1,18 +1,18 @@
-To inscribir:  
+To enroll:  
   Loop.
-    write "REGISTRO DE CURSOS" to the console.
+    write "STUDENT ENROLLMENT" to the console.
     write "3. NodeJS" to the console.
     write "2. JavaScript" to the console.
     write "1. MongoDB" to the console.
     skip one line to the console.
-    write "Ingresa número de control:" to the console.
+    write "Enter control number:" to the console.
     read a string from the console.
     put the string into a student's control_number.
-    write "Selecciona un curso:" to the console.
+    write "Select a course:" to the console.
     read another string from the console.        
     put the other string into the student's course_number.
     enroll the student into a buffer.
-    write "¿Deseas registrar otro curso? Si[1]  No[0]: " to the console without advancing.
+    write "Â¿Do you wish to subscribe to another course? Yes[1]  No[0]: " to the console without advancing.
     read a string called condition from the console.
     if the condition is "0", break.
     skip one line to the console.
@@ -21,13 +21,13 @@ To inscribir:
 
 To enroll a student into a buffer:
   Append the student's control_number then " - " then the student's course_number then the crlf string to the buffer.  
-  write "Estudiante con número  " then the student's control_number then "  " then "inscrito en curso  " then the student's course_number to the console.
-  put "I" into an activity's action. put the system's date/time into the activity's date.  [seguimiento]
+  write "Student's number  " then the student's control_number then "  " then "enroll into course " then the student's course_number to the console.
+  put "E" into an activity's action. put the system's date/time into the activity's date.  [log]
   put the student's control_number into the activity's control. put the student's course_number into the activity's course. 
   register the activity.
 
 To save enrollments from a buffer:
-  put "D:\cal-4700 initiative\CMS\inscripciones.txt"  into a path.
+  put "D:\cal-4700 initiative\CMS\cm system\files\students.txt"  into a path.
   if the path is not in the file system, create the path in the file system.
   read the path into a buffer called original.
   write the original then the buffer to the path. 
